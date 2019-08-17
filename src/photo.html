@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Our Photo</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+   		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts--->
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+		<!---//webfonts--->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<!----- start-header---->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							<a href="#">Our Photo</a>
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li><a href="../index.html">Home </a></li>
+								<li><a href="./video.html">Video</a></li>
+								<li><a href="./story.html">Story</a></li>
+								<li><a href="./about.html">About</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!----banner---->
+			<div class="banner text-center">
+				<div class="container">
+					<div class="banner-info">
+						<h1><span>愿得一心人，白头不相离</span></h1>
+						<p>—— 卓文君《白头吟》</p>
+						<label class="page-scroll"><a class="big-btn scroll" href="#work1"><span> </span></a></label>
+					</div>
+				</div>
+			</div>
+			<!--//banner---->
+			<!---work--->
+			<div id="work" class="work">
+				<div id="work1" class="container">
+					<div class="head-one text-center">
+						<h2>美美的照片记录着我们的过去</h2>
+					</div>
+					<!---works--->
+					<!---images-hover-effects--->
+					<script src="js/jquery.hoverGrid.js"></script>
+					<link rel="stylesheet" type="text/css" href="css/jquery.hoverGrid.css">
+					<script type="text/javascript">
+					    $(document).ready(function() {
+					      $('#whatever').hoverGrid();
+					    });
+					</script>
+					<!---images-hover-effects--->
+					<div class="works">
+							<div id="whatever">
+								<div class="col-md-4 work-grid">
+								    <div class="item">
+								        <a href="./photo/harbin.html">
+													<img  src="../photo/IMG_20180402_123859.jpg"/>
+									        <div class="caption" style="display: none;">
+									            <h2>哈尔滨</h2>
+									        </div>
+												</a>
+								    </div>
+							    </div>
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+											<a href="./photo/wuhan.html">
+								        <img  src="../photo/IMG_20190122_140316.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>武汉</h2>
+								        </div>
+											</a>
+								    </div>
+							    </div>
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+											<a href="./photo/yinchuan.html">
+								        <img  src="../photo/IMG_20180512_154325.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>银川</h2>
+								        </div>
+											</a>
+								    </div>
+							    </div>
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+											<a href="./photo/dalian.html">
+								        <img  src="../photo/IMG_20181018_203809.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>大连</h2>
+								        </div>
+											</a>
+								    </div>
+							    </div>
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+											<a href="./photo/chengdu.html">
+								        <img  src="../photo/IMG_20190425_103831.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>成都</h2>
+								        </div>
+											</a>
+								    </div>
+							    </div>
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+											<a href="./photo/other.html">
+								        <img  src="../photo/4b65a789c62e96fe.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>其他</h2>
+								        </div>
+											</a>
+								    </div>
+							    </div>
+							    <div class="clearfix"> </div>
+							</div>
+					</div>
+					 <div class="clearfix"> </div>
+					</div>
+				</div>
+					<!---//works--->
+</body>
+</html>
